@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700&display=swap');
+
+body {
+	font-family:Montserrat;
+}
+h1 {
+	margin: 0;
+  padding: 0;
+}
+.project .col img{
+	height:120px;
+	padding-right: 30px;
+}
+.project{
+	display: flex;
+	justify-content: flex-start;
+	width:70%;
+	padding:20px;
+	margin: 10px;
+	border-radius: 10px;
+	max-width: 700px;
+	border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.projects {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.top-container{
+	padding:30px;
+	margin:70px 70px 0px 70px;
+}
+.intro-container{
+	margin-bottom:50px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.intro-container .image img{
+	margin-right:75px;
+	border-radius: 50%;
+	height:130px;
+}
+
+.top-container hr {
+	max-width: 500px;
+	color:rgb(218, 218, 218);
+
+}
+.sb {
+	padding-right: 10px;	
+}
+
+.sb i {
+	color:black;
+}
+
+.sb i:hover{
+	color:grey;
+}
+.mobile{
+	visibility: hidden;
+	display:none;
+}
+@media only screen and (max-width: 500px) {
+		.intro-container .image img{
+			margin-right:50px;
+		}
+		.mobile {
+			visibility: visible;
+			display:block;
+		}
+		.pc {
+			visibility: hidden;
+			display:none;
+		}
+}
