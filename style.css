@@ -57,11 +57,13 @@ h1 {
 .sb {
 	padding-right: 10px;
 }
-
-.sb i:hover {
-	opacity:0.1;
+.sb i {
+font-color:black;
+	text-decoration:none;
 }
-
+.sb i:hover {
+	color: grey;\
+}
 .mobile {
 	visibility: hidden;
 	display: none;
