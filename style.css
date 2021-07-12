@@ -63,7 +63,7 @@ h1 {
 }
 
 .sb i:hover {
-	color: grey;
+	opacity:0.1;
 }
 
 .mobile {
