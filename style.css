@@ -57,16 +57,32 @@ h1 {
 .sb {
 	padding-right: 10px;
 }
+
 .sb i {
-color:black;
-	text-decoration:none;
+	color: black;
+	text-decoration: none;
 }
+
 .sb i:hover {
-	color: grey;\
+	color: grey;
 }
+
 .mobile {
 	visibility: hidden;
 	display: none;
+}
+
+.dsb {
+	padding-right: 10px;
+}
+
+.dsb i {
+	color: white;
+	text-decoration: none;
+}
+
+.dsb i:hover {
+	color: grey;
 }
 
 @media only screen and (max-width: 500px) {
