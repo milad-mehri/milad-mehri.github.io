@@ -3,6 +3,16 @@ body {
 	font-family: Montserrat;
 }
 
+
+#button {
+	border: none;
+	width: 200px;
+	height:30px
+}
+.french {
+	display: none;
+}
+
 h1 {
 	margin: 0;
 	padding: 0;

@@ -17,7 +17,8 @@
             </div>
             <div class="text">
                 <h1>MILAD MEHRI</h1>
-                <p>Full-stack developer</p>
+                <p class="english">Full-stack developer</p>
+                <p class="french">Développeur full-stack</p>
                 <a class="sb" target="_blank" href="mailto:memm.milad@gmail.com">
                     <i style="font-size:20px;" class="fas fa-at"></i></a>
                 <a class="sb" target="_blank" href="https://github.com/milad-mehri">
@@ -38,14 +39,21 @@
                 <h1 style="color: white;">Shift</h1>
                 <h3 class="pc" style="color:grey;">NODE.JS + EJS + SOCKET.IO + CSS</h3>
 
-                <p style="color: white;">Shift is a straightforward, simple website used to create temporary private
+                <p class="english" style="color: white;">Shift is a straightforward, simple website used to create
+                    temporary private
                     chat rooms in seconds. Chat rooms will last 12 hours before getting deleted.</p>
+                <p class="french" style="color: white;">Shift est un site Web simple et direct utilisé pour créer des
+                    données privées temporaires.
+                    salons de discussion en quelques secondes. Les salons de discussion dureront 12 heures avant d'être
+                    supprimés.</p>
+
+
                 <!-- <a class="sb" target="_blank" href="https://github.com/milad-mehri/RegexTester"><i
                         style="color:white;font-size:20px;" class="fab fa-github"></i></a> -->
                 <!-- <a class="sb" target="_blank" href="https://github.com/milad-mehri/RegexTester/blob/main/README.md"><i
                         style="color:white;font-size:20px;" class="fas fa-info-circle"></i></a> -->
-            <a class="dsb" target="_blank" href="https://github.com/milad-mehri/Shift"><i
-                        style="font-size:20px;" class="fab fa-github"></i></a>
+                <a class="dsb" target="_blank" href="https://github.com/milad-mehri/Shift"><i style="font-size:20px;"
+                        class="fab fa-github"></i></a>
             </div>
         </div>
 
@@ -59,8 +67,13 @@
                 <h1 style="color: white;">Regex Tester</h1>
                 <h3 class="pc" style="color:grey;">HTML + CSS + JS</h3>
 
-                <p style="color: white;">RegexTester helps you visualize and debug your regular expressions in a simple
+                <p class="english" style="color: white;">RegexTester helps you visualize and debug your regular
+                    expressions in a simple
                     and convenient manner.</p>
+
+                <p class="french" style="color: white;">RegexTester vous aide à visualiser et à déboguer vos expressions
+                    régulières dans un simple
+                    et de manière pratique.</p>
                 <a class="dsb" target="_blank" href="https://github.com/milad-mehri/RegexTester"><i
                         style="font-size:20px;" class="fab fa-github"></i></a>
                 <a class="dsb" target="_blank" href="https://github.com/milad-mehri/RegexTester/blob/main/README.md"><i
@@ -79,8 +92,13 @@
                 <h1>Bongo Bot</h1>
                 <h3 class="pc" style="color:grey;">NODE.JS + DISCORD</h3>
 
-                <p>Bongo is a economy themed bot on <a href="https://discord.com" target="_blank">Discord</a> with over
+                <p class="english">Bongo is a economy themed bot on <a href="https://discord.com"
+                        target="_blank">Discord</a> with over
                     230,000 members and over 100,000 commands used.</p>
+
+                <p class="french">Bongo est un bot sur le thème de l'économie sur <a href="https://discord.com"
+                        target="_blank">Discord</a> avec plus de 230 000 membres
+                    et plus de 100 000 commandes utilisées.</p>
                 <a class="sb" target="_blank" href="https://github.com/milad-mehri/bongo"><i style="font-size:20px;"
                         class="fab fa-github"></i></a>
                 <a class="sb" target="_blank" href="https://github.com/milad-mehri/bongo/blob/main/README.md"><i
@@ -89,8 +107,53 @@
                     href="https://discord.com/oauth2/authorize?client_id=780943575394942987&permissions=1074129990&scope=bot"><i
                         style="font-size:20px;" class="fab fa-discord"></i></a>
             </div>
+
+
         </div>
+
+        <button id="button" onclick="translate()">
+            French > English
+        </button>
     </div>
+
+    <script>
+        var english = document.getElementsByClassName('english');
+        var french = document.getElementsByClassName('french');
+        function translate() {
+
+
+
+
+            if (french[0].style.display === "none") {
+                // document.getElementById('button').innerHTML = `French`;
+                for (var i = 0; i < english.length; i++) {
+
+                    english[i].style.display = "none";
+                }
+
+                for (var i = 0; i < french.length; i++) {
+
+                    french[i].style.display = "block";
+                }
+
+            } else {
+                // document.getElementById('button').innerHTML = `English`;
+
+                for (var i = 0; i < english.length; i++) {
+
+                    english[i].style.display = "block";
+                }
+
+                for (var i = 0; i < french.length; i++) {
+
+                    french[i].style.display = "none";
+                }
+            }
+
+        }
+    </script>
+
+
 </body>
 
 </html>
