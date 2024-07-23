@@ -14,7 +14,7 @@ const Intro = () => {
       <div>
         <h1 className="text-3xl font-bold mb-2">Milad Mehri</h1>
         <h2 className="text-xl font-medium">
-          Second Year CS @ <b>UBC</b>
+          Second Year CS @ <a className="font-bold hover:underline" href="https://www.cs.ubc.ca/" target="_blank">UBC</a>
         </h2>
         {/* <h2 className="text-xl font-medium">Computer Science Student</h2> */}
   
