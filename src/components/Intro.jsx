@@ -7,7 +7,7 @@ const Intro = () => {
   return (
     <div className=" flex items-center justify-center p-10 bg-gray-400 text-white dark:bg-gray-800">
       <img
-        src={`${process.env.PUBLIC_URL}/placeholder.png`}
+        src={`${process.env.PUBLIC_URL}/1711239474668.jpeg`}
         alt="Milad Mehri"
         className="rounded-full w-32 h-32 border-4 border-white shadow-lg mr-16"
       />
