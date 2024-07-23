@@ -5,13 +5,13 @@ import { FaExternalLinkSquareAlt } from "react-icons/fa";
 const ProjectCard = ({ project }) => {
   return (
     <div className=" p-5 text-base max-w-screen-md text-left  transition ease-in-out  text-black dark:text-white">
-      <div className="flex items-center">
+      <div className="flex  items-center">
         <img
           src={project.image || `${process.env.PUBLIC_URL}/placeholder.png`}
           alt={project.name + " Milad Mehri"}
-          className="rounded-lg w-40 h-40 object-cover mr-14"
+          className="rounded-lg w-40 h-40 object-cover mr-14 sm5:hidden "
         />
-        <div className="flex flex-col">
+        <div className="flex flex-col sm5:mx-8">
           <div className="flex space justify-between">
             <div>
               <b className="self-start text-xl">{project.name}</b>
