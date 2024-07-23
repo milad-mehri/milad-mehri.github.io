@@ -17,8 +17,8 @@ function App() {
 
   return (
     <div className={`App min-h-screen ${darkMode ? 'dark' : ''}`}>
-      <header >
-        <button
+      <header className='text-right bg-gray-400 text-white dark:bg-gray-700'>
+        <button className='p-3'
           onClick={() => setDarkMode(!darkMode)}
         >
           Toggle Dark Mode

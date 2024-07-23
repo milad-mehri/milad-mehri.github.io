@@ -1,7 +1,6 @@
 const projects = [
   {
     name: "UBC Talks",
-    link: false,
     tech: "Typescript, Next.js, Supabase, Google, Tailwind CSS",
     bulletPoints: [
       "Reddit-esque web application for student discussion about UBC courses, built with Next.js and Supabase",
@@ -67,7 +66,7 @@ const projects = [
       "Allow users to input regular expressions as well as text, then the elements in the text that correspond to the regular expression are highlighted"
     ],
     github: "https://github.com/milad-mehri/shift",
-    image: `${process.env.PUBLIC_URL}/regex.png`,
+    image: `${process.env.PUBLIC_URL}/rtlogo.png`,
   },
 ];
 
