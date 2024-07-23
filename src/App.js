@@ -16,8 +16,8 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div className={`App min-h-screen ${darkMode ? 'dark' : ''}`}>
-      <header className='text-right bg-gray-400 text-white dark:bg-gray-700'>
+    <div className={`App min-h-screen fade-in ${darkMode ? 'dark' : ''}`}>
+      <header className='text-right bg-gray-400 text-white dark:bg-gray-800'>
         <button className='p-3'
           onClick={() => setDarkMode(!darkMode)}
         >
@@ -27,6 +27,23 @@ function App() {
 
       <Intro />
       <Projects />
+
+      <style jsx>{`
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+
+        .fade-in {
+          animation: fadeIn 1s ease-in-out;
+        }
+
+        
+      `}</style>
     </div>
   );
 }

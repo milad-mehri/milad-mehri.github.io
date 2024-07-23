@@ -15,7 +15,9 @@ const ProjectCard = ({ project }) => {
           <div className="flex space justify-between">
             <div>
               <b className="self-start text-xl">{project.name}</b>
-              <p className="mb-3 text-sm self-start text-gray-600 dark:text-gray-400 italic">{project.tech}</p>
+              <p className="mb-3 text-sm self-start text-gray-600 dark:text-gray-400 italic">
+                {project.tech}
+              </p>
               {/* <p className="text-sm">{project.description}</p> */}
 
               <ul className="list-disc ">
@@ -26,17 +28,29 @@ const ProjectCard = ({ project }) => {
                 ))}
               </ul>
             </div>
-            <div className="flex"> 
-            <a target="_blank" href={project.github} className="p-1   hover:text-gray-600">
-              <FaGithub size={20} />
-            </a>
-            {project.link && <a target="_blank" href={project.link} className="p-1  hover:text-gray-600">
-              <FaExternalLinkSquareAlt size={20} />
-            </a>}
+            <div className="flex">
+              <a
+                target="_blank"
+                href={project.github}
+                className="p-1   hover:text-gray-600"
+              >
+                <FaGithub size={20} />
+              </a>
+              {project.link && (
+                <a
+                  target="_blank"
+                  href={project.link}
+                  className="p-1  hover:text-gray-600"
+                >
+                  <FaExternalLinkSquareAlt size={20} />
+                </a>
+              )}
             </div>
           </div>
         </div>
       </div>
+      <hr className="border-0 min-h-0.5 bg-gradient-to-r mt-10 from-transparent via-gray-700 to-transparent dark:via-white " />
+      
     </div>
   );
 };
