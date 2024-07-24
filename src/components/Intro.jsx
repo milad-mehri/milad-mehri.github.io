@@ -2,6 +2,7 @@ import React from "react";
 import { IoDocumentText } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
+import { IoMdMail } from "react-icons/io";
 
 const Intro = () => {
   return (
@@ -49,6 +50,14 @@ const Intro = () => {
             className="p-1 text-white hover:text-gray-200"
           >
             <IoLogoLinkedin size={20} />
+          </a>
+
+          <a
+            target="_blank"
+            href="mailto:memm.milad@gmail.com"
+            className="p-1 text-white hover:text-gray-200"
+          >
+            <IoMdMail size={20} />
           </a>
         </div>
       </div>
