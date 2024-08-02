@@ -24,6 +24,17 @@ const projects = [
     image: `${process.env.PUBLIC_URL}/2544.png`,
   },
   {
+    name: "SEO Snap",
+    link: "https://seo-snap.vercel.app/",
+    tech: "Next.js, Node.js, Tailwind CSS, Web Scraping",
+    bulletPoints: [
+      "Provided insights regarding SEO for websites through web scraping techniques",
+      "Helps maximize website visibility and performance in search engine results",
+    ],
+    github: "https://github.com/milad-mehri/seo-snap",
+    image: `${process.env.PUBLIC_URL}/SEO.png`,
+  },
+  {
     name: "Bongo, Discord Bot",
     link: false,
     tech: "Discord.js, Node.js, MongoDB",
@@ -53,17 +64,18 @@ const projects = [
     bulletPoints: [
       "Developed a temporary chat room web application, where users can enter a unique 10-digit code to get access to a live chat room that can host an unlimited number of users",
       "Wrote a script to make all messages and user information disappear after 24 hours",
-      "Used Socket.io to enable communication among users, and MongoDB to store them"
+      "Used Socket.io to enable communication among users, and MongoDB to store them",
     ],
     github: "https://github.com/milad-mehri/shift",
     image: `${process.env.PUBLIC_URL}/shift.png`,
-  },  {
+  },
+  {
     name: "RegexTester",
     link: "/RegexTester",
     tech: "HTML, CSS, JS",
     bulletPoints: [
       "Designed and implemented a web application that helps users visualise and debug regular expressions in an easy to understand and convenient manner",
-      "Allow users to input regular expressions as well as text, then the elements in the text that correspond to the regular expression are highlighted"
+      "Allow users to input regular expressions as well as text, then the elements in the text that correspond to the regular expression are highlighted",
     ],
     github: "https://github.com/milad-mehri/shift",
     image: `${process.env.PUBLIC_URL}/rtlogo.png`,
