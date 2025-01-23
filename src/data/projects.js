@@ -9,7 +9,7 @@ const projects = [
     ],
     github: "https://github.com/milad-mehri/thenstep",
     link: "https://www.youtube.com/watch?v=mIPAovu09cM",
-    image:  `${process.env.PUBLIC_URL}/placeholder-300x300.png`
+    image:  `${process.env.PUBLIC_URL}/thenstep.png`
   },
 
   {
@@ -23,7 +23,7 @@ const projects = [
     github: "https://github.com/milad-mehri/pinpoint/",
 
     link: "https://milad-mehri.github.io/pinpoint/",
-    image: `${process.env.PUBLIC_URL}/placeholder-300x300.png`,
+    image: `${process.env.PUBLIC_URL}/pinpoint.png`,
   },
   {
     name: "UBC Talks",
