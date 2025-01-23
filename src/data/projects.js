@@ -1,5 +1,18 @@
 const projects = [
   {
+    name: "ThenStep",
+    tech: "Next.js, Bun, OpenStreetMap, Google Maps API, Puppeteer",
+    bulletPoints: [
+      "Developed a map application enabling natural language search for safer, scenic, and eco-friendly routes.",
+      "Integrated OpenStreetMap and Google Maps API for dynamic and interactive mapping.",
+      "Scraped local data with Puppeteer to enhance route variety and community-focused features.",
+    ],
+    github: "https://github.com/milad-mehri/thenstep",
+    link: "https://www.youtube.com/watch?v=mIPAovu09cM",
+    image:  `${process.env.PUBLIC_URL}/placeholder-300x300.png`
+  },
+
+  {
     name: "Pinpoint",
     tech: "Next.js, Node.js, Tailwind CSS",
     bulletPoints: [
