@@ -1,5 +1,18 @@
 const projects = [
   {
+    name: "Pinpoint",
+    tech: "Next.js, Node.js, Tailwind CSS",
+    bulletPoints: [
+      "Built and deployed a fast-paced category-guessing game with daily challenges.",
+      "Used Next.js and Node.js for smooth gameplay and efficient backend.",
+      "Styled with Tailwind CSS for a clean, interactive user experience.",
+    ],
+    github: "https://github.com/milad-mehri/pinpoint/",
+
+    link: "https://milad-mehri.github.io/pinpoint/",
+    image: `${process.env.PUBLIC_URL}/placeholder-300x300.png`,
+  },
+  {
     name: "UBC Talks",
     tech: "Typescript, Next.js, Supabase, Google, Tailwind CSS",
     bulletPoints: [
