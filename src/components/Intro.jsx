@@ -24,7 +24,7 @@ const Intro = () => {
             UBC
           </a>
         </h2>
-        <h2>SWE Fellow @ Headstarter AI</h2>
+        {/* <h2>SWE Fellow @ Headstarter AI</h2> */}
         {/* <h2 className="text-xl font-medium">Computer Science Student</h2> */}
 
         <div className="mt-3 flex text-white cente justify-center">
