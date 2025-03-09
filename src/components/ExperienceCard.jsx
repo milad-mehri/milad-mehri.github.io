@@ -15,7 +15,7 @@ const ExperienceCard = ({ experience, isOpen, setOpenExperience }) => {
  rounded-lg 
       ${
         isExpanded
-          ? "p-6  shadow-lg"
+          ? "p-6 bg-gray-400 bg-opacity-5 shadow-lg"
           : "p-4  shadow-md"
       } 
       text-base w-full max-w-screen-md text-left text-black dark:text-white mb-4`}

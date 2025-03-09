@@ -8,7 +8,11 @@ const ProjectCard = ({ project, isOpen, setOpenProject }) => {
     <div
       className={`transition-all duration-300 ease-in-out cursor-pointer 
       hover:bg-gray-300 dark:hover:bg-opacity-5 
-      ${isExpanded ? "p-4" : "p-3"} 
+         ${
+        isExpanded
+          ? "p-4 bg-gray-300 bg-opacity-5 shadow-lg"
+          : "p-3  shadow-md"
+      } 
       text-base w-full max-w-screen-md text-left text-black dark:text-white rounded-lg mb-2`}
       onClick={() => setOpenProject(isExpanded ? null : project.name)}
     >
