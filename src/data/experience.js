@@ -1,5 +1,18 @@
 const experience = [
   {
+    company: "Netverge",
+    position: "Software Engineer Intern",
+    date: "Apr 2025 - Present",
+    tech: "React, Next.js, Python, Django, Full-Stack Development",
+    bulletPoints: [
+      "Built full-stack features for Netverge’s MSP platform using React, Next.js, and Django.",
+      "Collaborated with customers and testers to gather feedback and improve UX and functionality.",
+      "Helped shape scalable architecture and contributed to product demos, including at Web Summit.",
+    ],
+    link: "https://www.netverge.info/",
+    image: `${process.env.PUBLIC_URL}/netverge.png`,
+  },
+  {
     company: "Visual Cognition Lab",
     position: "Software Developer",
     date: "Feb 2025 - Present",

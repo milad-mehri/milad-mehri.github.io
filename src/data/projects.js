@@ -16,16 +16,20 @@ const projects = [
     name: "Pinpoint",
     tech: "Next.js, Node.js, Tailwind CSS",
     bulletPoints: [
-      "Built and deployed a fast-paced category-guessing game with daily challenges.",
-      "Used Next.js and Node.js for smooth gameplay and efficient backend.",
-      "Styled with Tailwind CSS for a clean, interactive user experience.",
+      "Built and deployed a viral category-guessing game with daily challenges.",
+      "Serves over 50K monthly views, monetized and supported by a growing player community.",
+      "Used Next.js and Node.js for smooth gameplay and backend efficiency.",
+      "Styled with Tailwind CSS for a clean, responsive experience.",
     ],
-    github: "https://github.com/milad-mehri/pinpoint/",
 
-    link: "https://milad-mehri.github.io/pinpoint/",
+    link: "https://playpinpoint.co/",
     image: `${process.env.PUBLIC_URL}/pinpoint.png`,
+    badges: [
+      { color: "#3b82f6", text: "50k+ views per month" },  
+      { color: "#FFD586", text: "Trending" },  
+    ],
   },
-  {
+    {
     name: "UBC Talks",
     tech: "Typescript, Next.js, Supabase, Google, Tailwind CSS",
     bulletPoints: [
@@ -69,6 +73,10 @@ const projects = [
     ],
     github: "http://github.com/milad-mehri/bongo",
     image: `${process.env.PUBLIC_URL}/bongo.png`,
+    badges:[
+      { color: "#9333ea", text: "200K+ users" },
+      { color: "#9ca3af", text: "Discontinued" },
+    ]
   },
   {
     name: "Schedular, Power Up Hacks Hackathon Winner",
@@ -80,6 +88,9 @@ const projects = [
     ],
     github: "https://github.com/milad-mehri/Schedular",
     image: `${process.env.PUBLIC_URL}/mlh.png`,
+    badges: [
+      { color: "#facc15", text: "Hackathon Winner" },
+    ],
   },
   {
     name: "Shift, Chat Room",

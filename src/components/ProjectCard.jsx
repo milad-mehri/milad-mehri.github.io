@@ -16,36 +16,64 @@ const ProjectCard = ({ project, isOpen, setOpenProject }) => {
       text-base w-full max-w-screen-md text-left text-black dark:text-white rounded-lg mb-2`}
       onClick={() => setOpenProject(isExpanded ? null : project.name)}
     >
-      <div className="flex items-center justify-between w-full transition-all duration-300 ease-in-out">
+      <div className="flex items-start justify-between w-full transition-all duration-300 ease-in-out">
         {/* Project Image */}
-        <img
-          src={project.image || `${process.env.PUBLIC_URL}/placeholder.png`}
-          alt={`${project.name} by Milad Mehri`}
-          className={`hidden sm:block rounded-lg object-cover transition-all duration-300 ease-in-out 
-          ${isExpanded ? "w-32 h-32 mr-6" : "w-14 h-14 mr-6"}`}
-        />
+        <div className="shrink-0 mr-4 sm:mr-6">
+          <img
+            src={project.image || `${process.env.PUBLIC_URL}/placeholder.png`}
+            alt={`${project.name} by Milad Mehri`}
+            className={`rounded-lg object-cover transition-all duration-300 ease-in-out
+            ${isExpanded ? "w-20 h-20 sm:w-32 sm:h-32" : "w-12 h-12 sm:w-14 sm:h-14"}`}
+          />
+        </div>
 
         {/* Project Info */}
         <div className="flex flex-col flex-grow">
           <div className="flex justify-between items-center w-full">
             <div className="flex flex-col">
-              <b className="text-lg">{project.name}</b>
+              <div className="flex items-center flex-wrap gap-2">
+                {project.link ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline hover:underline-offset-2 hover:decoration-1 text-lg font-bold"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    {project.name}
+                  </a>
+                ) : (
+                  <b className="text-lg">{project.name}</b>
+                )}
+                {project.badges?.map((badge, idx) => (
+                  <span 
+                    key={idx}
+                    className="text-xs font-medium px-2 py-0.5 rounded-full"
+                    style={{ backgroundColor: `${badge.color}20`, color: badge.color, border: `1px solid ${badge.color}40` }}
+                  >
+                    {badge.text}
+                  </span>
+                ))}
+              </div>
               <p className="text-sm text-gray-500 dark:text-gray-400 italic">
                 {project.tech}
               </p>
             </div>
 
-            {/* Icons (Moved Closer) */}
+            {/* Icons */}
             <div className="flex items-center">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href={project.github}
-                className="p-1 hover:text-gray-600"
-                onClick={(e) => e.stopPropagation()}
-              >
-                <FaGithub size={18} />
-              </a>
+              {project.github && (
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={project.github}
+                  className="p-1 hover:text-gray-600"
+                  onClick={(e) => e.stopPropagation()}
+                  title="View on GitHub"
+                >
+                  <FaGithub size={18} />
+                </a>
+              )}
               {project.link && (
                 <a
                   target="_blank"
@@ -53,6 +81,7 @@ const ProjectCard = ({ project, isOpen, setOpenProject }) => {
                   href={project.link}
                   className="p-1 hover:text-gray-600"
                   onClick={(e) => e.stopPropagation()}
+                  title="View Live Project"
                 >
                   <FaExternalLinkSquareAlt size={18} />
                 </a>
