@@ -9,7 +9,7 @@ const experience = [
       "Collaborated with customers and testers to gather feedback and improve UX and functionality.",
       "Helped shape scalable architecture and contributed to product demos, including at Web Summit.",
     ],
-    link: "https://www.netverge.info/",
+    link: "https://www.linkedin.com/company/netverge-services/",
     image: `${process.env.PUBLIC_URL}/netverge.png`,
   },
   {

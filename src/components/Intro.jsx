@@ -17,17 +17,30 @@ const Intro = () => {
       {/* Intro Text */}
       <div className="text-center sm:text-left">
         <h1 className="text-3xl font-bold mb-1">Milad Mehri</h1>
-        <h2 className="text-lg font-medium text-gray-600 dark:text-gray-400">
-          CS @{" "}
-          <a
-            className="font-bold text-blue-600 dark:text-blue-400 hover:underline"
-            href="https://www.cs.ubc.ca/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            UBC
-          </a>
-        </h2>
+        <div className="space-y-1">
+          <div className="whitespace-nowrap">
+            SWE Intern @{" "}
+            <a
+              className="font-bold text-blue-600 dark:text-blue-400 hover:underline"
+              href="https://www.linkedin.com/company/netverge-services/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Netverge
+            </a>
+          </div>
+          <div className="whitespace-nowrap">
+            CS @{" "}
+            <a
+              className="font-bold text-blue-600 dark:text-blue-400 hover:underline"
+              href="https://www.cs.ubc.ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              UBC
+            </a>
+          </div>
+        </div>
 
         {/* Social Links */}
         <div className="mt-3 flex justify-center sm:justify-start space-x-4">
