@@ -1,5 +1,6 @@
 const projects = [
   {
+    isFavorite: true,
     name: "ThenStep",
     tech: "Next.js, Bun, OpenStreetMap, Google Maps API, Puppeteer",
     bulletPoints: [
@@ -8,11 +9,15 @@ const projects = [
       "Scraped local data with Puppeteer to enhance route variety and community-focused features.",
     ],
     github: "https://github.com/milad-mehri/thenstep",
+    video: "https://www.youtube.com/embed/mIPAovu09cM",
     link: "https://www.youtube.com/watch?v=mIPAovu09cM",
-    image:  `${process.env.PUBLIC_URL}/thenstep.png`
+    image:  `${process.env.PUBLIC_URL}/thenstep.png`,
+    badges: [
+      { color: "#FF0000", text: "Video" }
+    ]
   },
-
   {
+    isFavorite: true,
     name: "Pinpoint",
     tech: "Next.js, Node.js, Tailwind CSS",
     bulletPoints: [
@@ -25,11 +30,13 @@ const projects = [
     link: "https://playpinpoint.co/",
     image: `${process.env.PUBLIC_URL}/pinpoint.png`,
     badges: [
-      { color: "#3b82f6", text: "50k+ views per month" },  
-      { color: "#FFD586", text: "Trending" },  
+      { color: "#3b82f6", text: "50k+ views/month" },  
+      { color: "#FFD586", text: "Trending" },
+      { color: "#10b981", text: "Live" }  
     ],
   },
-    {
+  {
+    isFavorite: true,
     name: "UBC Talks",
     tech: "Typescript, Next.js, Supabase, Google, Tailwind CSS",
     bulletPoints: [
@@ -40,6 +47,9 @@ const projects = [
     github: "https://github.com/alantensor/ubc-talks",
     link: "https://ubc-talks-264ncfoefq-uw.a.run.app/home",
     image: `${process.env.PUBLIC_URL}/ubctalks.png`,
+    badges: [
+      { color: "#10b981", text: "Live" }
+    ],
   },
   {
     name: "NBA Career Length Predictor",
@@ -51,6 +61,9 @@ const projects = [
     ],
     github: "https://github.com/milad-mehri/nba-career-length-predictor",
     image: `${process.env.PUBLIC_URL}/2544.png`,
+    badges: [
+      { color: "#10b981", text: "Live" }
+    ],
   },
   {
     name: "SEO Snap",
@@ -62,8 +75,13 @@ const projects = [
     ],
     github: "https://github.com/milad-mehri/seo-snap",
     image: `${process.env.PUBLIC_URL}/SEO.png`,
+    badges: [
+      { color: "#10b981", text: "Live" }
+    ],
   },
   {
+    isFavorite: true,
+
     name: "Bongo, Discord Bot",
     link: false,
     tech: "Discord.js, Node.js, MongoDB",
@@ -79,7 +97,7 @@ const projects = [
     ]
   },
   {
-    name: "Schedular, Power Up Hacks Hackathon Winner",
+    name: "Schedular, Power Up Hacks",
     link: "https://devpost.com/software/schedular",
     tech: "Node.js, EJS, CSS, HTML, Express.js, Twilio, bcrypt, MongoDB",
     bulletPoints: [
@@ -114,6 +132,9 @@ const projects = [
     ],
     github: "https://github.com/milad-mehri/shift",
     image: `${process.env.PUBLIC_URL}/rtlogo.png`,
+    badges: [
+      { color: "#10b981", text: "Live" }
+    ],
   },
 ];
 

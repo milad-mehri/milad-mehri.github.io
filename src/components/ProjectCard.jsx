@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaGithub, FaExternalLinkSquareAlt, FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { FaGithub, FaExternalLinkSquareAlt, FaChevronDown, FaChevronUp, FaStar } from "react-icons/fa";
 
 const ProjectCard = ({ project, isOpen, setOpenProject }) => {
   const isExpanded = isOpen === project.name;
@@ -8,14 +8,16 @@ const ProjectCard = ({ project, isOpen, setOpenProject }) => {
     <div
       className={`transition-all duration-300 ease-in-out cursor-pointer 
       hover:bg-gray-300 dark:hover:bg-opacity-5 
-         ${
+      relative
+      ${
         isExpanded
           ? "p-4 bg-gray-300 bg-opacity-5 shadow-lg"
-          : "p-3  shadow-md"
+          : "p-3 shadow-md"
       } 
-      text-base w-full max-w-screen-md text-left text-black dark:text-white rounded-lg mb-2`}
+      text-base w-full max-w-screen-md text-left text-black dark:text-white rounded-lg mb-2 group`}
       onClick={() => setOpenProject(isExpanded ? null : project.name)}
     >
+
       <div className="flex items-start justify-between w-full transition-all duration-300 ease-in-out">
         {/* Project Image */}
         <div className="shrink-0 mr-4 sm:mr-6">
@@ -62,6 +64,12 @@ const ProjectCard = ({ project, isOpen, setOpenProject }) => {
 
             {/* Icons */}
             <div className="flex items-center">
+              {project.isFavorite && (
+                <FaStar 
+                  className="text-yellow-500/70 drop-shadow-sm animate-spin-slow mr-1" 
+                  size={18}
+                />
+              )}
               {project.github && (
                 <a
                   target="_blank"

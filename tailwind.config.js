@@ -7,6 +7,9 @@ module.exports = {
       screens: {
         'sm5': {'max': '575px'},
       },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      },
     },
   },
   plugins: [],
