@@ -22,7 +22,7 @@ const projects = [
     tech: "Next.js, Node.js, Tailwind CSS",
     bulletPoints: [
       "Built and deployed a viral category-guessing game with daily challenges.",
-      "Serves over 50K monthly views, monetized and supported by a growing player community.",
+      "Serves over 100K monthly views, monetized and supported by a growing player community.",
       "Used Next.js and Node.js for smooth gameplay and backend efficiency.",
       "Styled with Tailwind CSS for a clean, responsive experience.",
     ],
@@ -30,7 +30,7 @@ const projects = [
     link: "https://playpinpoint.co/",
     image: `${process.env.PUBLIC_URL}/pinpoint.png`,
     badges: [
-      { color: "#3b82f6", text: "50k+ views/month" },  
+      { color: "#3b82f6", text: "100k+ views/month" },  
       { color: "#FFD586", text: "Trending" },
       { color: "#10b981", text: "Live" }  
     ],
