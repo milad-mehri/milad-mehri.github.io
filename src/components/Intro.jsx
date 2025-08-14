@@ -9,7 +9,7 @@ const Intro = () => {
     <div className="flex flex-col sm:flex-row items-center justify-center px-6 py-12 bg-gray-100 dark:bg-gray-900 text-black dark:text-white">
       {/* Profile Image - Square */}
       <img
-        src={`${process.env.PUBLIC_URL}/1711239474668.jpeg`}
+        src={`${process.env.PUBLIC_URL}/1754886728692.jpg`}
         alt="Milad Mehri"
         className="w-32 h-32 rounded-lg border-4 border-gray-300 dark:border-gray-600 shadow-lg sm:mr-8 mb-4 sm:mb-0"
       />
@@ -19,7 +19,7 @@ const Intro = () => {
         <h1 className="text-3xl font-bold mb-1">Milad Mehri</h1>
         <div className="space-y-1">
           <div className="whitespace-nowrap">
-            SWE Intern @{" "}
+           Prev @{" "}
             <a
               className="font-bold text-blue-600 dark:text-blue-400 hover:underline"
               href="https://www.linkedin.com/company/netverge-services/"
