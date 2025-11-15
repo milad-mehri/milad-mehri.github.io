@@ -22,17 +22,15 @@ const projects = [
     tech: "Next.js, Node.js, Tailwind CSS",
     bulletPoints: [
       "Built and deployed a viral category-guessing game with daily challenges.",
-      "Serves over 100K monthly views, monetized and supported by a growing player community.",
+      "Achieved over 1,000,000+ plays, with a growing and engaged player community.",
       "Used Next.js and Node.js for smooth gameplay and backend efficiency.",
       "Styled with Tailwind CSS for a clean, responsive experience.",
     ],
 
-    link: "https://playpinpoint.co/",
+    link: "/#/pinpoint",
     image: `${process.env.PUBLIC_URL}/pinpoint.png`,
     badges: [
-      { color: "#3b82f6", text: "100k+ views/month" },  
-      { color: "#FFD586", text: "Trending" },
-      { color: "#10b981", text: "Live" }  
+      { color: "#3b82f6", text: "1M+ plays" }
     ],
   },
   {
@@ -47,9 +45,6 @@ const projects = [
     github: "https://github.com/alantensor/ubc-talks",
     link: "https://ubc-talks-264ncfoefq-uw.a.run.app/home",
     image: `${process.env.PUBLIC_URL}/ubctalks.png`,
-    badges: [
-      { color: "#10b981", text: "Live" }
-    ],
   },
   {
     name: "NBA Career Length Predictor",
