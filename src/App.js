@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Intro from './components/Intro';
 import Projects from './components/Projects';
-
-import './App.css';
 import Experience from './components/Experience';
+import Pinpoint from './components/Pinpoint';
+import './App.css';
 
-function App() {
+const AppContent = () => {
   const [darkMode, setDarkMode] = useState(true);
+  const location = useLocation();
 
   // Load dark mode preference from localStorage
   useEffect(() => {
@@ -22,6 +24,12 @@ function App() {
     document.documentElement.classList.toggle("dark", darkMode);
   }, [darkMode]);
 
+  // If on the /pinpoint route, only render the Pinpoint component
+  if (window.location.hash === '#/pinpoint') {
+    return <Pinpoint />;
+  }
+
+  // Original app content for all other routes
   return (
     <div className="App min-h-screen fade-in">
       <header className="text-right bg-gray-400 text-white dark:bg-gray-800">
@@ -38,6 +46,17 @@ function App() {
       <Experience />
       <Projects />
     </div>
+  );
+};
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<AppContent />} />
+        <Route path="/pinpoint" element={<Pinpoint />} />
+      </Routes>
+    </Router>
   );
 }
 
