@@ -62,9 +62,11 @@ const ExperienceCard = ({ experience, isOpen, setOpenExperience }) => {
               <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 italic">
                 {experience.position} • {experience.date}
               </p>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                {experience.tech}
-              </p>
+              {experience.tech ? (
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  {experience.tech}
+                </p>
+              ) : null}
             </div>
 
             {/* Icons */}

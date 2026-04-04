@@ -1,5 +1,14 @@
 const experience = [
   {
+    company: "Amazon",
+    position: "Software Development Engineer Intern",
+    date: "May 2026 - Aug 2026",
+    tech: "",
+    bulletPoints: [<>incoming</>],
+    link: "https://www.linkedin.com/company/amazon/",
+    image: `${process.env.PUBLIC_URL}/amazon_logo.jpg`,
+  },
+  {
     company: "Netverge Services",
     position: "Software Engineering Intern",
     date: "Apr 2025 - Aug 2025",
