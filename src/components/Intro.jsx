@@ -19,7 +19,7 @@ const Intro = () => {
         <h1 className="text-3xl font-bold mb-1">Milad Mehri</h1>
         <div className="space-y-1">
           <div className="whitespace-nowrap">
-            Incoming @{" "}
+            SDE Intern @{" "}
             <a
               className="font-bold text-blue-600 dark:text-blue-400 hover:underline"
               href="https://www.linkedin.com/company/amazon/"
